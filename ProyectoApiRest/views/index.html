@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de Libros</title>
+</head>
+<body>
+    <h1>Pagina de Libros</h1>
+    <ul>
+        {% for p in data %}
+          <li>Titulo: {{ p.Titulo }} - (Autor: {{ p.Autor }})</li>
+        {% endfor %}
+    </ul>
+    <p><a href="/buscador">Buscador de Libros</a></p>
+    <p><a href="/alta">Dar de alta Libros</a></p> 
+<h2><a href="/logout">LOGOUT</a></h2>   
+</body>
+</html>
